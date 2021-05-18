@@ -1,17 +1,17 @@
 <h1 align="center">
-    Expensi<img alt="expensio" title="#expensio" src="./src/assets/logo.svg" />
+    Expensi<img alt="moneiro" title="#moneiro" src="./src/assets/logo.svg" />
 </h1>
 
 <h3 align="center"> An easy way to control your personal finances
 </h3>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/arubesu/expensio">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/arubesu/moneiro">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arubesu/expensio">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/arubesu/moneiro">
 
-  <a href="https://github.com/arubesu/expensio/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arubesu/expensio">
+  <a href="https://github.com/arubesu/moneiro/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arubesu/moneiro">
   </a>
     <img alt="Status" src="https://img.shields.io/badge/Status-Work_In_Progress-yellow">
 
@@ -32,7 +32,7 @@
 
 ## About
 
-:money_with_wings: expensio is an easy manage your finances and control your expenses. Register all the financial movement you make and control your expenses.
+:money_with_wings: moneiro is an easy manage your finances and control your expenses. Register all the financial movement you make and control your expenses.
 Project developed during [Rocketseat](https://blog.rocketseat.com.br/) bootcamp. 
 
 ---
@@ -71,10 +71,10 @@ In addition, it is good to have an editor to work with the code like [VSCode] (h
 ```bash
 
 # Clone this repository
-$ git clone git@github.com:arubesu/expensio.git
+$ git clone git@github.com:arubesu/moneiro.git
 
 # Access the project folder cmd/terminal
-$ cd expensio
+$ cd moneiro
 
 # install the dependencies
 $ npm install
@@ -95,11 +95,11 @@ The following tools were used in the construction of the project:
 
 -   **[styled-components](https://styled-components.com/)**
 
-> See the file  [package.json](https://github.com/arubesu/expensio/blob/master/package.json)
+> See the file  [package.json](https://github.com/arubesu/moneiro/blob/master/package.json)
 
 #### **Tools**
 
--   Prototype:  **[Figma](https://www.figma.com/)**  →  **[Layout (expensio)](https://www.figma.com/file/0xmu9mj2TJYoIOubBFWsk5/dtmoney-Ignite-(Copy))**
+-   Prototype:  **[Figma](https://www.figma.com/)**  →  **[Layout (moneiro)](https://www.figma.com/file/0xmu9mj2TJYoIOubBFWsk5/dtmoney-Ignite-(Copy))**
 ---
 ## How to contribute
 
