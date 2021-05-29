@@ -1,5 +1,5 @@
 import incomeImg from '../../assets/income.svg';
-import outcomeImg from '../../assets/outcome.svg';
+import debtImg from '../../assets/debt.svg';
 import totalImg from '../../assets/total.svg';
 
 import { Container } from './styles';
@@ -16,8 +16,8 @@ export function Summary() {
       </div>
       <div>
         <header>
-          <p>Outcomes</p>
-          <img src={outcomeImg} alt="Outcomes" />
+          <p>Debts</p>
+          <img src={debtImg} alt="debts" />
         </header>
         <strong>-U$ 500,0</strong>
       </div>
