@@ -4,7 +4,7 @@ import { api } from '../../services/api';
 
 interface Transaction {
   id: number,
-  title: string,
+  description: string,
   category: string,
   value: number,
   date: Date,
@@ -25,7 +25,7 @@ export function TransactionsTable() {
       <table>
         <thead>
           <tr>
-            <th>Title</th>
+            <th>Description</th>
             <th>Value</th>
             <th>Category</th>
             <th>Date</th>
@@ -35,10 +35,19 @@ export function TransactionsTable() {
         {transactions && transactions.map(transaction => (
           <tbody key={transaction.id}>
             <tr>
-              <td>{transaction.title}</td>
-              <td>{transaction.value}</td>
+              <td>{transaction.description}</td>
+              <td className={transaction.type}>{
+                new Intl.NumberFormat('en-US', {
+                  style: 'currency',
+                  currency: 'USD',
+                }).format(transaction.value)
+              }</td>
               <td>{transaction.category}</td>
-              <td>{transaction.date}</td>
+              <td>{
+                new Intl.DateTimeFormat(
+                  'en-US',
+                ).format(new Date(transaction.date))
+              }</td>
             </tr>
           </tbody>
         ))}
