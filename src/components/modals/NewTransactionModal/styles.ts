@@ -31,6 +31,18 @@ flex-direction: column;
    & + input {
      margin-top: 1rem;
    }
+
+  /* Chrome, Safari, Edge, Opera */
+  &[type=number]:-webkit-outer-spin-button,
+  &[type=number]:-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  &[type=number] {
+    -moz-appearance: textfield;
+  }
  }
 
  button[type="submit"] {
