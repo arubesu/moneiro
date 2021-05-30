@@ -24,9 +24,15 @@ table {
     &:first-child{
       color: var(--text-title);
     }
+
+    &.credit{
+      color: var(--green);
+    }
+     
+    &.debt{
+      color: var(--red);
+    }
   }
-
-
 }
 
 `;
