@@ -76,10 +76,6 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
       <Container
         onSubmit={(e) => handleCreateNewTransaction(e)}
       >
-
-        <pre>
-        </pre>
-
         <button
           className="react-modal-close"
           onClick={handleClose}

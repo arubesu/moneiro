@@ -32,10 +32,17 @@ export const TransactionContextProvider = ({ children }: TransactionContextProvi
     });
   }, [])
 
-  const createNewTransaction = async (transaction: CreateTransactionInput) => {
-    await api.post('/transactions',
-      transaction,
+  const createNewTransaction = async (transactionInput: CreateTransactionInput) => {
+    var response = await api.post('/transactions',
+      transactionInput,
     );
+
+    const transaction = response.data;
+
+    setTransactions([
+      ...transactions,
+      transaction
+    ])
   }
 
   return <TransactionContext.Provider

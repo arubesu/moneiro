@@ -47,7 +47,6 @@ createServer({
     })
   },
 
-
   routes() {
     this.namespace = 'api';
 
@@ -60,6 +59,7 @@ createServer({
       let transaction = JSON.parse(request.requestBody);
 
       transaction.id = newId++;
+      transaction.date = new Date();
 
       this.schema.create('transactions', transaction);
       return transaction;
