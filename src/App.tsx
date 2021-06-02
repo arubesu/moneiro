@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
 import { NewTransactionModal } from "./components/modals/NewTransactionModal";
+import { TransactionContextProvider } from "./Contexts/TransactionContext";
 import { GlobalStyle } from "./styles/global";
 
 //(https://reactcommunity.org/react-modal/accessibility/)
@@ -20,7 +21,7 @@ export function App() {
   }
 
   return (
-    <>
+    <TransactionContextProvider>
       <GlobalStyle />
       <Header onOpenModal={openNewTransactionModal} />
       <NewTransactionModal
@@ -28,6 +29,6 @@ export function App() {
         onRequestClose={closeNewTransactionModal}
       />
       <Dashboard />
-    </>
+    </TransactionContextProvider>
   );
 }
