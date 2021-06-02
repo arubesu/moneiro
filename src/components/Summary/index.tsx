@@ -2,7 +2,7 @@ import incomeImg from '../../assets/income.svg';
 import debtImg from '../../assets/debt.svg';
 import totalImg from '../../assets/total.svg';
 
-import { Container } from './styles';
+import { Container, SummaryBox } from './styles';
 import { useTransactions } from '../../hooks/useTransactions';
 
 export function Summary() {
@@ -27,7 +27,7 @@ export function Summary() {
 
   return (
     <Container>
-      <div>
+      <SummaryBox>
         <header>
           <p>Incomes</p>
           <img src={incomeImg} alt="Incomes" />
@@ -38,8 +38,8 @@ export function Summary() {
             currency: 'USD'
           }).format(summary.credits)
         }</strong>
-      </div>
-      <div>
+      </SummaryBox>
+      <SummaryBox>
         <header>
           <p>Debts</p>
           <img src={debtImg} alt="debts" />
@@ -50,8 +50,14 @@ export function Summary() {
             currency: 'USD'
           }).format(summary.debts)
         }</strong>
-      </div>
-      <div>
+      </SummaryBox>
+      <SummaryBox
+        boxStyle={
+          summary.total >= 0 ?
+            'green' :
+            'red'
+        }
+      >
         <header>
           <p>Total</p>
           <img src={totalImg} alt="Total" />
@@ -62,7 +68,7 @@ export function Summary() {
             currency: 'USD'
           }).format(summary.total)
         }</strong>
-      </div>
+      </SummaryBox>
     </Container>
   )
 }
