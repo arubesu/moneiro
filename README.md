@@ -13,7 +13,7 @@
   <a href="https://github.com/arubesu/moneiro/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/arubesu/moneiro">
   </a>
-    <img alt="Status" src="https://img.shields.io/badge/Status-Work_In_Progress-yellow">
+    <img alt="Status" src="https://img.shields.io/badge/completed-green">
 
    <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
