@@ -55,6 +55,10 @@ The application layout is available on Figma:
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
 
+ <img  alt="Home"  title="#Home"  src="https://raw.githubusercontent.com/arubesu/moneiro/main/screenshots/home.png"  width="400px">
+
+  <img  alt="Register new transaction"  title="#RegisterNewTransaction"  src="https://raw.githubusercontent.com/arubesu/moneiro/main/screenshots/register-new-transaction.png"  width="400px">
+
 
 ---
 
