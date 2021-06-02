@@ -1,5 +1,5 @@
 <h1 align="center">
-    Expensi<img alt="moneiro" title="#moneiro" src="./src/assets/logo.svg" />
+    Moneiro<img alt="moneiro" title="#moneiro" src="./src/assets/logo.svg" />
 </h1>
 
 <h3 align="center"> An easy way to control your personal finances
