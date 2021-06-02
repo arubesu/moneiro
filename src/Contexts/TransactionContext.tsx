@@ -18,7 +18,7 @@ interface TransactionContextProviderProps {
 
 interface TransactionContextState {
   transactions: Transaction[];
-  createNewTransaction: (transaction: CreateTransactionInput) => void;
+  createNewTransaction: (transaction: CreateTransactionInput) => Promise<void>;
 }
 
 export const TransactionContext = createContext({} as TransactionContextState);
@@ -32,8 +32,8 @@ export const TransactionContextProvider = ({ children }: TransactionContextProvi
     });
   }, [])
 
-  const createNewTransaction = (transaction: CreateTransactionInput) => {
-    api.post('/transactions',
+  const createNewTransaction = async (transaction: CreateTransactionInput) => {
+    await api.post('/transactions',
       transaction,
     );
   }

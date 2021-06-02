@@ -27,6 +27,22 @@ createServer({
           type: 'debt',
           date: new Date(),
         },
+        {
+          id: 3,
+          category: 'development',
+          description: 'Website Development',
+          value: 18000.56,
+          type: 'credit',
+          date: new Date(),
+        },
+        {
+          id: 4,
+          category: 'bills',
+          description: 'Apartment Rent',
+          value: 2000,
+          type: 'debt',
+          date: new Date(),
+        },
       ],
     })
   },
@@ -35,7 +51,7 @@ createServer({
   routes() {
     this.namespace = 'api';
 
-    let newId = 3;
+    let newId = 5;
 
     this.get('/transactions', () =>
       this.schema.all('transactions'));

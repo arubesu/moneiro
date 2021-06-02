@@ -45,11 +45,14 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
     onRequestClose();
   }
 
-  const handleCreateNewTransaction = (event: FormEvent) => {
+  const handleCreateNewTransaction = async (event: FormEvent) => {
     event.preventDefault();
-    createNewTransaction(
+
+    await createNewTransaction(
       transaction,
     );
+
+    handleClose();
   }
 
   const onTransactionChange = (event: ChangeEvent<HTMLInputElement>) => {
