@@ -1,11 +1,11 @@
-import { ChangeEvent, FormEvent, useContext, useState } from 'react';
+import { ChangeEvent, FormEvent, useState } from 'react';
 import Modal from 'react-modal';
 
 import { Container, TransactionBoxSelector, TransactionBoxSelectorButton } from './styles'
 import closeImg from '../../../assets/close.svg'
 import incomeImg from '../../../assets/income.svg'
 import debtImg from '../../../assets/debt.svg'
-import { TransactionContext } from '../../../Contexts/TransactionContext';
+import { useTransactions } from '../../../hooks/useTransactions';
 
 interface NewTransactionModalProps {
   isOpen: boolean;
@@ -29,7 +29,7 @@ const defaultTransaction: Transaction = {
 export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionModalProps) {
   const [selectedTransaction, setSelectedTransaction] = useState<'credit' | 'debt'>('credit');
   const [transaction, setTransaction] = useState<Transaction>(defaultTransaction);
-  const { createNewTransaction } = useContext(TransactionContext);
+  const { createNewTransaction } = useTransactions();
 
   const onTransactionSelectionChange = (selectedTransaction: 'credit' | 'debt') => {
     setSelectedTransaction(selectedTransaction);

@@ -3,11 +3,10 @@ import debtImg from '../../assets/debt.svg';
 import totalImg from '../../assets/total.svg';
 
 import { Container } from './styles';
-import { useContext } from 'react';
-import { TransactionContext } from '../../Contexts/TransactionContext';
+import { useTransactions } from '../../hooks/useTransactions';
 
 export function Summary() {
-  const { transactions } = useContext(TransactionContext);
+  const { transactions } = useTransactions();
 
   const summary = transactions.reduce((acc, cur) => {
 

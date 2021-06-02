@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
 import { NewTransactionModal } from "./components/modals/NewTransactionModal";
-import { TransactionContextProvider } from "./Contexts/TransactionContext";
+import { TransactionContextProvider } from "./hooks/useTransactions";
 import { GlobalStyle } from "./styles/global";
 
 //(https://reactcommunity.org/react-modal/accessibility/)
